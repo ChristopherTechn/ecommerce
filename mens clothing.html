@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylep.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            list-style: none;
+        }
+          a {
+            background-color:whitesmoke;
+            padding: 4px 5px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            margin-left: 50px;
+            gap: 10em;
+          }
+       </style>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <img src="images/logo.jpg">
+        <form action="">
+            <input type="text" placeholder="search through the store">
+            <button>search</button>
+        </form>
+        <div class="details">
+            <div class="cart">
+                <i class="fas fa-cart-arrow-down"></i>
+                <small>0</small>
+            </div>
+            <div class="user">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6v-Quj0rUbKfkYkO5xry7QsyV_3dNemjlbw&usqp=CAU" alt="user profile">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" >
+        <div class="hero-section">
+            <h2>You dream it we deliver it !!</h2>
+            <img src="images/men.jpg" alt="">
+            <div class="categories">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="electronics.html">Electronics</a></li>
+                    <li><a href="womens clothing.html">women's clothing</a></li>
+                    <li><a href="jewelery.html">Jewelery</a></li>
+                </ul>
+
+            
+                
+            </div>
+        </div>
+        <h4>Products</h4>
+        <div class="products" id="products">
+           
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+
+    
+
+    <script src="men.js"></script>
+</body>
+</html>

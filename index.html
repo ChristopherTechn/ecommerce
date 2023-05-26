@@ -1,0 +1,147 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+   <style>
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        list-style: none;
+    }
+      a {
+        background-color:whitesmoke;
+        padding: 4px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        gap: 10em;
+      }
+   </style>
+  
+</head>
+<body>
+    
+
+    <div class="nav-bar">
+        <img src="images/logo.jpg">
+        <form action="">
+            <input type="text" placeholder="Find anything your heart  Desires">
+            <button>search</button>
+        </form>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+
+                <!-- <li><a href="cart.html">Cart</a></li> -->
+                <!-- <li><a href="#" id="cart">Cart </a><span id="cartCount">0</span>
+                </li> -->
+
+            </ul>
+        </nav>
+        <div class="details">
+            <!-- <div class="cartt">
+                <i class="fas fa-cart-arrow-down"></i>
+                <small id="cart">0</small>
+            </div> -->
+            <div class="user">
+                
+                <i class="fas fa-chevron-down"></i>
+                <div class="cart">
+                    <div id="cartCount" onclick="toggleCart()"><i class="fas fa-cart-arrow-down"></i>Cart(0)</div>
+                </div>
+                
+                <a href="cart.html"><h5>CLICK ME!</h5><img src="images/cart.webp"   alt="user profile"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" >
+        <div class="hero-section">
+            <h2>You dream it! we deliver it! in an instance!!</h2>
+            <img src="images/cart.webp" alt="">
+            
+            <div class="categories">
+                <ul>
+                    <li><a href="">CLOTHES CATEGORIES</li>
+                    <li><a href="electronics.html">Electronics</a></li>   
+                    <li><a href="jewelery.html">Jewelery</a></li> 
+                    <li><a href="mens clothing.html">Men's clothing</a></li> 
+                    <li> <a href="womens clothing.html">women's clothing</a></li>
+                </ul>
+
+            
+            </div>
+        </div>
+        <div class="container">
+            <h4>Products</h4>
+            <div class="products-container" id="products"></div>
+                <!-- <button type="submit">ADD TO CART</button> -->
+        </div>
+    
+     
+    
+
+        </div>
+    </div>
+    <div class="sidenav" id="cartContainer" style="display: none;">
+        <a href="#" onclick="toggleCart()">
+            Close</a>
+        <div id="cart"></div>
+        <div id="cartTotal"></div>
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <div id="productPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeProductPopup()">&times;</span>
+            <div class="slideshow-buttons">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+            </div>
+            <p class="pick">choose size</p>
+            <div class="sizes">
+                <!-- <div class="size">5</div>
+                <div class="size">6</div>
+                <div class="size">7</div>
+                <div class="size">8</div>
+                <div class="size">9</div>
+                <div class="size">10</div>
+                <div class="size">11</div>
+                <div class="size">12</div> -->
+            </div>
+            <div id="popupProduct"></div>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="search-form ">
+        <input type="text" id="searchInput" placeholder="Search products">
+        <button onclick="searchProducts()">Search</button>
+    </div> -->
+
+    <div class="products-container" id="products"></div>
+    <!-- <div id="productDetails" class="product-details"></div> -->
+    <!-- <div id="cartItems" class="cart-items"></div> -->
+
+
+
+
+    <script src="index.js"></script>
+    
+
+</body>
+</html>
